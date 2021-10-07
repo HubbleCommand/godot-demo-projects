@@ -163,7 +163,7 @@ public class Lobby : Control
     public override void _Process(float delta){
         if(_server != null){
             if(_server.IsListening()){
-                _peer.Poll();
+                _server.Poll();
             }
         }
         
